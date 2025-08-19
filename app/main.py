@@ -7,6 +7,9 @@ class Person:
         Person.people[self.name] = self
 
 
+Person.people.clear()
+
+
 def create_person_list(people: list) -> list:
     for dict_num in people:
         Person(dict_num["name"], dict_num["age"])
